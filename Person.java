@@ -199,6 +199,8 @@ public class Person {
 
     public String toString(){
          return "Name: " + this.fName + " " + this.Lname + "\n" +
-                 "Age: " + this.age;
+                 "Age: " + this.age + "\n" +
+                 "University: " + this.university + "\n" +
+                 "Ranking: " + getRanking(this.university);
     }
 }
