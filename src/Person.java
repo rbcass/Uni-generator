@@ -1,3 +1,5 @@
+package src;
+
 import java.io.*;
 import java.util.*;
 
@@ -31,8 +33,8 @@ public class Person {
     public String setfName() {
 
         try {
-            File nameOne = new File("firstName.txt");
-            FileReader reader = new FileReader("firstName.txt");
+            File nameOne = new File("src/firstName.txt");
+            FileReader reader = new FileReader("src/firstName.txt");
             Scanner scan = new Scanner(nameOne);
             BufferedReader b1 = new BufferedReader(reader);
 
@@ -72,7 +74,7 @@ public class Person {
         public String setLname(){
 
             try{
-                FileReader reader2 = new FileReader("lastName.txt");
+                FileReader reader2 = new FileReader("src/lastName.txt");
                 BufferedReader b2 = new BufferedReader(reader2);
                 String Lname;
                 List<String>lastName = new ArrayList<>();
@@ -107,7 +109,7 @@ public class Person {
         public String setUni(){
             try{
                 //import
-                File file = new File("List.txt");
+                File file = new File("src/List.txt");
                 Scanner scan = new Scanner(file);
 //            FileReader reader = new FileReader(file);
 
@@ -161,7 +163,7 @@ public class Person {
 
         try {
 
-            File file2 = new File("List.txt");
+            File file2 = new File("src/List.txt");
             Scanner scn = new Scanner(file2);
             Random r = new Random();
 
